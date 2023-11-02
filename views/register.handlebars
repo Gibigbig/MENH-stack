@@ -1,0 +1,18 @@
+<h1>Register</h1>
+<p>Please fill in this form to create an account.</p>
+<form action="/users/register" method="POST">
+  <div>
+    <label for="email">Email</label>
+    <input type="text" name="email" value="{{email}}">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" name="password" value="{{password}}">
+  </div>
+  <div>
+    <label for="password2">Confirm Password</label>
+    <input type="password" name="password2" value="{{password2}}">
+  </div>
+  <button type="submit">Register</button>
+</form>
+<a href="/users/login">Login</a>
