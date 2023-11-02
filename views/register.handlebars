@@ -1,18 +1,18 @@
-<h1>Register</h1>
-<p>Please fill in this form to create an account.</p>
+<h1 class="text-lg font-bold">Register</h1>
+<a href="/"> Back</a><p>Please fill in this form to create an account.</p>
 <form action="/users/register" method="POST">
   <div>
     <label for="email">Email</label>
-    <input type="text" name="email" value="{{email}}">
+    <input class="border border-gray-300"  type="text" name="email" value="{{email}}">
   </div>
   <div>
     <label for="password">Password</label>
-    <input type="password" name="password" value="{{password}}">
+    <input class="border border-gray-300"  type="password" name="password" value="{{password}}">
   </div>
   <div>
     <label for="password2">Confirm Password</label>
-    <input type="password" name="password2" value="{{password2}}">
+    <input class="border border-gray-300" type="password" name="password2" value="{{password2}}">
   </div>
-  <button type="submit">Register</button>
+  <button type="submit" class="rounded-sm bg-gray-400 px-3 py-1">Register</button>
 </form>
-<a href="/users/login">Login</a>
+<a class="rounded-sm bg-green-400 px-3 py-1" href="/users/login">Login</a>
